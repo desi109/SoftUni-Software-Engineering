@@ -5,8 +5,8 @@ Write a program to sum all adjacent equal numbers in a list of decimal numbers, 
 •	Always sum the leftmost two equal neighbors (if several couples of equal neighbors are available).
 
 Examples
-Input	        Output  	Explanation
-3 3 6 1 	    12 1	    3 3 6 1 -> 6 6 1 -> 12 1
-8 2 2 4 8 16	16 8 16   	8 2 2 4 8 16 -> 8 4 4 8 16 -> 8 8 8 16 -> 16 8 16
-5 4 2 1 1 4 	5 8 4	    5 4 2 1 1 4 -> 5 4 2 2 4 -> 5 4 4 4 -> 5 8 4
-0.1 0.1 5 -5	0.2 5 -5	0.1 0.1 5 -5 -> 0.2 5 -5
+Input	         Output  	  Explanation
+3 3 6 1 	     12 1	      3 3 6 1 -> 6 6 1 -> 12 1
+8 2 2 4 8 16	 16 8 16   	8 2 2 4 8 16 -> 8 4 4 8 16 -> 8 8 8 16 -> 16 8 16
+5 4 2 1 1 4 	 5 8 4	    5 4 2 1 1 4 -> 5 4 2 2 4 -> 5 4 4 4 -> 5 8 4
+0.1 0.1 5 -5	 0.2 5 -5 	0.1 0.1 5 -5 -> 0.2 5 -5
