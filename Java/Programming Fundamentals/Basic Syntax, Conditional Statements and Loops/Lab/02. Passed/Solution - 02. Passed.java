@@ -6,14 +6,10 @@ public class Example {
 
         double grade = Double.parseDouble(scanner.nextLine());
 
-        while (grade < 2 || grade > 6) {
-            grade = Double.parseDouble(scanner.nextLine());
-        }
-
-        if (grade > 3) {
+        if (grade >= 3) {
             System.out.println("Passed!");
         } else {
-            System.out.println("(no output)");
+            System.out.println("");
         }
     }
 }
