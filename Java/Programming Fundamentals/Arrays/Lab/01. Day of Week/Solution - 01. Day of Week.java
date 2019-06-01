@@ -4,7 +4,7 @@ public class Example {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String weekDays[] = {"Monday", "Tuesday", "Wednesday",
+        String [] weekDays = {"Monday", "Tuesday", "Wednesday",
                 "Thursday", "Friday", "Saturday", "Sunday"};
 
         int num = Integer.parseInt(scanner.nextLine());
