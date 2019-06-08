@@ -13,7 +13,8 @@ public class Example {
 
             int oneByte = in.read();
             while (oneByte >= 0) {
-                String res = Integer.toBinaryString(oneByte));
+                String res = Integer.toBinaryString(oneByte);
+                System.out.print(res + " ");
                 oneByte = in.read();
             }
         }
