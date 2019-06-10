@@ -14,7 +14,10 @@ public class Example {
         } else {
             Function<String, Integer> parser = x -> Integer.parseInt(x);
             int sum = 0;
-            for (String s : input) sum += parser.apply(s);
+
+            for (String s : input) {
+                sum += parser.apply(s);
+            }
             System.out.println("Count = " + input.length);
             System.out.println("Sum = " + sum);
         }
@@ -22,4 +25,3 @@ public class Example {
 
     }
 }
-
