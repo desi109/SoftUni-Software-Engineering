@@ -1,0 +1,20 @@
+## 3. Shapes
+
+Create class hierarchy, starting with abstract class Shape:<br>
+Fields:
+- perimeter
+- area<br>
+Encapsulation for this fields<br>
+Abstract methods:
+- calculatePerimeter()
+- calculateArea()<br>
+Extend Shape class with two children:
+- Rectangle
+- Circle<br>
+Each of them need to have: <br>
+Fields: 
+- height and width for Rectangle
+- radius for Circle<br>
+Encapsulation for this fields<br>
+Public constructor <br>
+Concrete methods for <br>
