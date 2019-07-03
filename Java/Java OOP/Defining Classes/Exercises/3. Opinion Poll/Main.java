@@ -8,7 +8,7 @@ public class Main {
 
         List<Person> people = new ArrayList<>();
 
-        while (n > 0) {
+        while (n-- > 0) {
             String line = scanner.nextLine();
             String[] arguments = line.split(" ");
 
@@ -16,8 +16,6 @@ public class Main {
                 Person person = new Person(arguments[0], Integer.parseInt(arguments[1]));
                 people.add(person);
             }
-
-            n--;
         }
 
         Collections.sort(people, Comparator.comparing(Person::getName));
