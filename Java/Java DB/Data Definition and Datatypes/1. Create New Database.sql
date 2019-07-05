@@ -1,17 +1,15 @@
 CREATE DATABASE `example_minions`;
 
-CREATE TABLE `minions` (
-  `idminions` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) NOT NULL,
-  `age` int(11) DEFAULT NULL,
-  `town_id` int(11) NOT NULL,
-  PRIMARY KEY (`idminions`),
-  KEY `fk_minions_towns_idx` (`town_id`),
-  CONSTRAINT `fk_minions_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`idtowns`)
+CREATE TABLE minions(
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL,
+town_id INT,
+CONSTRAINT fk_minions_towns
+FOREIGN KEY (town_id)
+REFERENCES towns(id)
 );
 
-CREATE TABLE `towns` (
-  `idtowns` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) NOT NULL,
-  PRIMARY KEY (`idtowns`)
+CREATE TABLE towns(
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL
 );
