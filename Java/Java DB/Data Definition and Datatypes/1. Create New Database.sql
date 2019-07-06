@@ -1,15 +1,18 @@
-CREATE DATABASE `example_minions`;
+CREATE DATABASE project;
+USE project;
+
+CREATE TABLE towns(
+id INT PRIMARY KEY AUTO_INCREMENT,
+name_town VARCHAR(20) NOT NULL
+);
 
 CREATE TABLE minions(
 id INT PRIMARY KEY AUTO_INCREMENT,
-name VARCHAR(50) NOT NULL,
+name_minion VARCHAR(20) NOT NULL,
 town_id INT,
 CONSTRAINT fk_minions_towns
 FOREIGN KEY (town_id)
 REFERENCES towns(id)
 );
 
-CREATE TABLE towns(
-id INT PRIMARY KEY AUTO_INCREMENT,
-name VARCHAR(50) NOT NULL
-);
+
