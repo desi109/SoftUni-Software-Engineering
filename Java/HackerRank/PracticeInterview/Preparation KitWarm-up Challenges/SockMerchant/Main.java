@@ -1,3 +1,5 @@
+//Problem: https://www.hackerrank.com/challenges/sock-merchant/problem
+
 import java.util.*;
 
 public class Main {
