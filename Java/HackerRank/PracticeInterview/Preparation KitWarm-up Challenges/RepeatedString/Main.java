@@ -1,3 +1,5 @@
+//Problem: https://www.hackerrank.com/challenges/repeated-string/problem
+
 import java.io.*;
 import java.util.*;
 
