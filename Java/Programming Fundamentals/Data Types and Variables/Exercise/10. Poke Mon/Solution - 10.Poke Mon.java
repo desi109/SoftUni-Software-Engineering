@@ -2,34 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner keys = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int n = Integer.parseInt(keys.nextLine());
-        double snowballValue = 0;
-        double maxSnowballValue = 0;
-        int snowballSnowOut = 0;
-        int snowballTimeOut = 0;
-        int snowballQualityOut = 0;
+        int pokemonPowerN = Integer.parseInt(scanner.nextLine());
+        int distanceM = Integer.parseInt(scanner.nextLine());
+        int exhaustionFactorY = Integer.parseInt(scanner.nextLine());
+        int count = 0;
+        double sum = pokemonPowerN;
 
-        for (int i = 0; i < n; i++) {
-            int snowballSnow = Integer.parseInt(keys.nextLine());
-            int snowballTime = Integer.parseInt(keys.nextLine());
-            int snowballQuality = Integer.parseInt(keys.nextLine());
+        while (distanceM <= pokemonPowerN) {
+            pokemonPowerN = pokemonPowerN - distanceM;
+            count++;
 
-            snowballValue = Math.pow((snowballSnow / snowballTime), snowballQuality);
-
-            if (snowballValue > maxSnowballValue) {
-                maxSnowballValue = snowballValue;
-                snowballSnowOut = snowballSnow;
-                snowballTimeOut = snowballTime;
-                snowballQualityOut = snowballQuality;
-
+            if (pokemonPowerN == (sum * 0.50)) {
+                if (exhaustionFactorY > 0) {
+                    pokemonPowerN = pokemonPowerN / exhaustionFactorY;
+                }
             }
-
         }
-        
-        System.out.printf("%d : %d = %.0f (%d)",
-                snowballSnowOut, snowballTimeOut, maxSnowballValue, snowballQualityOut);
 
+        System.out.println(pokemonPowerN);
+        System.out.println(count);
     }
 }
