@@ -60,17 +60,6 @@ public class Main {
             }
 
 
-//            if (countMultiply > 0) {
-//                for (int i1 = 0; i1 < countMultiply; i1++) {
-//                    damage = damage * 2;
-//                }
-//
-//            }
-//            if (countDivide > 0) {
-//                for (int i1 = 0; i1 < countMultiply; i1++) {
-//                    damage = damage / 2;
-//                }
-//            }
             for (int i1 = 0; i1 < countDivide; i1++) {
                 damage /= 2;
             }
